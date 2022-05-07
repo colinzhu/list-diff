@@ -2,13 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>list diff</title>
     <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <div id="input-area">
+        <div>Input Area</div>
+        <div class="column">
+            <label for="ori-left">Left</label>
+            <textarea id="ori-left"></textarea>
+        </div>
+        <div class="column">
+            <label for="ori-right">Right</label>
+            <textarea id="ori-right"></textarea>
+        </div>
+    </div>
     <div>
-        <textarea id="left"></textarea>
-        <textarea id="right"></textarea>
+        <div>Result</div>
+        <div class="column">
+            <textarea id="result-left" disabled></textarea>
+        </div>
+        <div class="column">
+            <textarea id="result-right" disabled></textarea>
+        </div>
     </div>
     <div><button onclick="main.go()">Go</button></div>
 </body>
